@@ -1,0 +1,112 @@
+body {
+    margin: 0%;
+    display: grid;
+    grid-template-areas:
+        "header inicio"
+        "header skills"
+        "header proyectos"
+        "footer footer";
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1024px 1024px 1024px 60px;
+    background-image: url(../IMG/fondo3.webp)
+}
+header {
+    margin-top: 0%;
+    grid-area: header;
+    background-color: rgb(40, 41, 63);
+    display: flex;
+    justify-content: center;
+}
+
+/*NAVBAR*/
+#nav {
+    position: fixed;
+    padding-top: 16%;
+    width: 8%;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav button {
+    display: block;
+    color: aliceblue;
+}
+
+/* Presentacion */
+#inicio {
+    grid-area: inicio;
+}
+
+#titulo {
+    padding-left: 15%;
+    margin-top: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#presentacion {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+#presentacion div {
+    display: inline;
+}
+
+.foto {
+    margin-left: 18rem;
+    border-color: aquamarine;
+}
+
+.texto {
+    margin-top: 5rem;
+    margin-left: 5%;
+    margin-right: 20%;
+    font-size:95%;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+/*SKILLS*/
+#skills {
+    grid-area: skills;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#estudios{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/*PRYECTOS*/
+#proyectos {
+    grid-area: proyectos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15rem;
+}
+.card-group .card{
+    margin: 4rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(58, 58, 102);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#titulo {
+    padding-left: 30%;
+}
